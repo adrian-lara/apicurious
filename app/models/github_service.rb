@@ -6,24 +6,24 @@ class GithubService
     @user_public_data = get_public_data(user_name)
   end
 
-  def self.full_name(user_name)
-    user_public_data(user_name)["name"]
+  def full_name
+    user_public_data["name"]
   end
 
-  def self.image(user_name)
-    user_public_data(user_name)["avatar_url"]
+  def image_url
+    user_public_data["avatar_url"]
   end
 
-  def self.bio(user_name)
-    user_public_data(user_name)["bio"]
+  def bio
+    user_public_data["bio"]
   end
 
-  def self.location(user_name)
-    user_public_data(user_name)["location"]
+  def location
+    user_public_data["location"]
   end
 
-  def self.blog(user_name)
-    user_public_data(user_name)["blog"]
+  def blog_url
+    user_public_data["blog"]
   end
 
   private

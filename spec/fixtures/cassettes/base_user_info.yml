@@ -1,0 +1,429 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '37'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.031905'
+      X-Github-Request-Id:
+      - D8BC:31AF:248A02:4C166C:5A285435
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:57 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '36'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.029767'
+      X-Github-Request-Id:
+      - D8BD:31B0:33B8D4:648306:5A285435
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:57 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '35'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.033922'
+      X-Github-Request-Id:
+      - D8BE:31B1:299DC9:698FAE:5A285435
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:57 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '34'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.029061'
+      X-Github-Request-Id:
+      - D8BF:31B0:33B92D:6483AC:5A285435
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:58 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '33'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.026496'
+      X-Github-Request-Id:
+      - D8C0:31AF:248A4F:4C172F:5A285436
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:58 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/adrian-lara
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Dec 2017 20:33:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '32'
+      X-Ratelimit-Reset:
+      - '1512593270'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      Etag:
+      - W/"fcc3fa663694cf5a68b783d2366f6c02"
+      Last-Modified:
+      - Tue, 05 Dec 2017 22:28:10 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.027472'
+      X-Github-Request-Id:
+      - D8C1:31B1:299E40:6990B0:5A285436
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"adrian-lara","id":30608004,"avatar_url":"https://avatars2.githubusercontent.com/u/30608004?v=4","gravatar_id":"","url":"https://api.github.com/users/adrian-lara","html_url":"https://github.com/adrian-lara","followers_url":"https://api.github.com/users/adrian-lara/followers","following_url":"https://api.github.com/users/adrian-lara/following{/other_user}","gists_url":"https://api.github.com/users/adrian-lara/gists{/gist_id}","starred_url":"https://api.github.com/users/adrian-lara/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/adrian-lara/subscriptions","organizations_url":"https://api.github.com/users/adrian-lara/orgs","repos_url":"https://api.github.com/users/adrian-lara/repos","events_url":"https://api.github.com/users/adrian-lara/events{/privacy}","received_events_url":"https://api.github.com/users/adrian-lara/received_events","type":"User","site_admin":false,"name":"Adrian
+        Lara","company":null,"blog":"https://www.linkedin.com/in/a-lara/","location":"Denver,
+        CO","email":null,"hireable":true,"bio":"Aspiring developer at Turing School
+        of Software & Design","public_repos":28,"public_gists":9,"followers":0,"following":0,"created_at":"2017-07-31T22:38:35Z","updated_at":"2017-12-05T22:28:10Z"}'
+    http_version: 
+  recorded_at: Wed, 06 Dec 2017 20:33:58 GMT
+recorded_with: VCR 4.0.0

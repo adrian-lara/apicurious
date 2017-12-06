@@ -8,4 +8,8 @@ class User < ApplicationRecord
     user
   end
 
+  def full_name
+    GithubService.full_name(user_name)
+  end
+
 end

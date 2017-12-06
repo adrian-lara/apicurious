@@ -26,6 +26,22 @@ describe GithubUser do
         end
       end
     end
+
+    context "#bio" do
+      it "returns the image url of a Github user" do
+        VCR.use_cassette('base_user_info') do
+          expect(subject.bio).to eq("Aspiring developer at Turing School of Software & Design")
+        end
+      end
+    end
+
+    context "#blog_link" do
+      it "returns the image url of a Github user" do
+        VCR.use_cassette('base_user_info') do
+          expect(subject.blog_link).to eq("https://www.linkedin.com/in/a-lara/")
+        end
+      end
+    end
   end
 
 end

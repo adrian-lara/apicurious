@@ -13,4 +13,12 @@ class GithubUser
   def image_url
     GithubService.image(user_name)
   end
+
+  def bio
+    GithubService.bio(user_name)
+  end
+
+  def blog_link
+    GithubService.blog(user_name)
+  end
 end

@@ -1,24 +1,30 @@
 class GithubUser
 
-  attr_reader :user_name
-
   def initialize(user_name)
-    @user_name = user_name
+    @base_service ||= GithubService.new(user_name)
   end
 
   def full_name
-    GithubService.full_name(user_name)
+    base_service.full_name
   end
 
   def image_url
-    GithubService.image(user_name)
+    base_service.image_url
+  end
+
+  def location
+    base_service.location
   end
 
   def bio
-    GithubService.bio(user_name)
+    base_service.bio
   end
 
-  def blog_link
-    GithubService.blog(user_name)
+  def blog_url
+    base_service.blog_url
   end
+
+  private
+
+    attr_reader :base_service
 end

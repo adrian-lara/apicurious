@@ -3,7 +3,7 @@ class GithubService
   attr_reader :user_public_data
 
   def initialize(user_name)
-    @user_public_data = get_public_data(user_name)
+    @user_public_data ||= get_public_data(user_name)
   end
 
   def full_name

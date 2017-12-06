@@ -10,4 +10,7 @@ class GithubUser
     GithubService.full_name(user_name)
   end
 
+  def image_url
+    GithubService.image(user_name)
+  end
 end

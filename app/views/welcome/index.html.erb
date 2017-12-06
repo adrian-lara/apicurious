@@ -1,1 +1,5 @@
-<%= link_to "Login", github_login_path, class: "link login-link" %>
+<% if current_user %>
+  <%= render partial: "partials/user-dashboard", locals: { current_user: current_user } %>
+<% else %>
+  <%= link_to "Login", github_login_path, class: "link login-link" %>
+<% end %>

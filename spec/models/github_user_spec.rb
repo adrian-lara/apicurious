@@ -5,7 +5,7 @@ describe GithubUser do
   subject { GithubUser.new('adrian-lara') }
 
   context "instance method" do
-    context "user_name" do
+    context "#user_name" do
       it "has user_name" do
         expect(subject.user_name).to eq("adrian-lara")
       end
@@ -13,8 +13,11 @@ describe GithubUser do
 
     context "#full_name" do
       it "returns the full name of a Github user" do
-        expect(subject.full_name). to eq("Adrian Lara")
+        VCR.use_cassette('base_user_info') do
+          expect(subject.full_name). to eq("Adrian Lara")
+        end
       end
     end
   end
+
 end

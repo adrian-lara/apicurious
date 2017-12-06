@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "When a user logs in" do
-  it "they are redirected to their show page" do
+  it "they are redirected to their show page that has basic public user information" do
     visit root_path
     click_link "Login"
 
@@ -11,7 +11,11 @@ describe "When a user logs in" do
     expect(User.last.token).to eq("1234")
     expect(page).not_to have_link("Login")
     expect(page).to have_content("adrian-lara")
-    
+
     expect(page).to have_content("Adrian Lara")
+    expect(page).to have_css("img[src='https://avatars2.githubusercontent.com/u/30608004?v=4']")
+    expect(page).to have_content("Aspiring developer at Turing School of Software & Design")
+    expect(page).to have_content("Denver, CO")
+    expect(page).to have_link("https://www.linkedin.com/in/a-lara/")
   end
 end

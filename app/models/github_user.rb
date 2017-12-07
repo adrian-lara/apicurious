@@ -2,9 +2,9 @@ class GithubUser
 
   attr_reader :user_name
 
-  def initialize(user_name)
-    @user_name = user_name
-    @base_service ||= GithubService.new(user_name)
+  def initialize(user)
+    @user_name = user.user_name
+    @base_service ||= GithubService.new(user)
   end
 
   def full_name

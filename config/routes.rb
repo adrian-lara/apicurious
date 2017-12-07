@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   get '/auth/github/callback', to: "sessions#create"
 
-  get '/users/:user_name', to: "users#show", as: :user
+  get '/dashboard', to: "dashboard#show", as: :dashboard
+
 end

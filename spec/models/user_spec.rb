@@ -8,7 +8,7 @@ RSpec.describe User do
 
         expect(user).to be_a User
         expect(user.user_name).to eq("adrian-lara")
-        expect(user.token).to eq("1234")
+        expect(user.token).to eq(ENV["GITHUB_USER_TOKEN"])
       end
     end
   end

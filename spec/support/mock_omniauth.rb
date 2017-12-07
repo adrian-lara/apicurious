@@ -5,6 +5,6 @@ def mock_github_hash
     "uid"=>1337,
     "info"=>
       {"nickname"=>"adrian-lara"},
-    "credentials"=>{"token"=>"1234", "expires"=>false}
+    "credentials"=>{"token"=>ENV["GITHUB_USER_TOKEN"], "expires"=>false}
     })
 end

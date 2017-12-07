@@ -2,14 +2,14 @@ require 'rails_helper'
 
 describe "When a user logs in" do
   it "they are redirected to their own show page and see their basic public information" do
-    VCR.use_cassette('base_user_info') do
+    VCR.use_cassette('token_base_call') do
       visit root_path
       click_link "Login"
 
-      expect(current_path).to eq(user_path(User.last.user_name))
+      expect(current_path).to eq(dashboard_path)
       expect(User.last.uid).to eq("1337")
       expect(User.last.user_name).to eq("adrian-lara")
-      expect(User.last.token).to eq("1234")
+      expect(User.last.token).to eq(ENV["GITHUB_USER_TOKEN"])
       expect(page).not_to have_link("Login")
       expect(page).to have_content("adrian-lara")
 

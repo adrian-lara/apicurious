@@ -52,6 +52,22 @@ describe GithubUser do
         end
       end
     end
+
+    context "#repos" do
+      it "returns a collection of repositories of a Github user" do
+        VCR.use_cassette("token_base_call") do
+          subject.repos.each do |repo|
+            expect(repo).to be_a GithubRepo
+          end
+
+          subject.repos.each do |repo|
+            expect(repo).to be_a GithubRepo
+          end
+
+          expect(subject.repos.first.name).to eq("activerecord_exploration")
+        end
+      end
+    end
   end
 
 end

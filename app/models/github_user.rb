@@ -1,10 +1,11 @@
 class GithubUser
 
-  attr_reader :user_name
+  attr_reader :user_name, :repos
 
   def initialize(user)
     @user_name = user.user_name
     @base_service ||= GithubService.new(user)
+    @repos ||= GithubRepo.retrieve_all(user)
   end
 
   def full_name

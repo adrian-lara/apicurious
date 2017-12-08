@@ -5,4 +5,10 @@
 <p><%= @user.location %></p>
 <p><%= link_to @user.blog_url, @user.blog_url %></p>
 
+<ul>
+<% @user.repos.each do |repo| %>
+  <li><%= repo.name %></li>
+<% end %>
+</ul>
+
 <p><%= link_to "Create New Repository", new_repository_path  %></p>

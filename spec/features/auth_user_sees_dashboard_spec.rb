@@ -20,4 +20,13 @@ describe "When a user logs in" do
       expect(page).to have_link("https://www.linkedin.com/in/a-lara/")
     end
   end
+
+  it "they also see their repository information" do
+    VCR.use_cassette('token_base_call') do
+      visit github_login_path
+
+      expect(page).to have_content("activerecord_exploration")
+      expect(page).to have_content("apicurious")
+    end
+  end
 end
